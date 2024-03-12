@@ -7,7 +7,7 @@
     --secondary-color: #8257E6;
     --tertiary-color: #2f0549;
     --quaternary-color: #f4f4f4;
-;
+    ;
 }
 
 * {
@@ -236,6 +236,10 @@ nav ul li:not(:last-child) {
     flex-wrap: wrap;
 }
 
+.skills .container h2 {
+    text-align: center;
+}
+
 .skill {
     display: flex;
     flex-direction: column;
@@ -244,7 +248,7 @@ nav ul li:not(:last-child) {
     background-color: var(--primary-color);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
     padding: 2rem;
-    border-radius: 1rem 0 1rem 1rem; 
+    border-radius: 1rem 0 1rem 1rem;
     width: 6rem;
     height: 6rem;
     gap: 0.3rem;
@@ -258,4 +262,47 @@ nav ul li:not(:last-child) {
 
 .skill img {
     width: 2rem;
+}
+
+/* projetos */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(47, 5, 73, 1) 23%, rgba(130, 87, 230, 1) 100%);
+    padding: 4rem 0 4rem 0;
+    color: var(--primary-color);
+}
+
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--quaternary-color);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    width: 390px;
+    height: 220px;
 }
