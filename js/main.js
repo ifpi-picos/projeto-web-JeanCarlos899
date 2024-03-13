@@ -33,3 +33,19 @@ addEventListener('load', () => {
     type();
 });
 
+window.onload = function () {
+    var projects = document.getElementsByClassName('project');
+    for (var i = 0; i < projects.length; i++) {
+        projects[i].addEventListener('mouseover', function () {
+            var details = this.getElementsByClassName('details')[0];
+            details.style.display = 'none';
+        });
+    }
+
+    for (var i = 0; i < projects.length; i++) {
+        projects[i].addEventListener('mouseout', function () {
+            var details = this.getElementsByClassName('details')[0];
+            details.style.display = 'flex';
+        });
+    }
+}

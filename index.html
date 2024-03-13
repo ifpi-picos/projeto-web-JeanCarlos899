@@ -11,34 +11,25 @@
 </head>
 
 <body>
-    <header>
-        <div class="page-header container">
-            <div class="header-title">
-                <i class="fas fa-coffee"></i>
+    <header class="header">
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-coffee"></i>
+                </a>
             </div>
-            <nav>
-                <ul>
-                    <li><a class="nav-link" href="#">home</a></li>
-                    <li><a class="nav-link" href="#about">sobre</a></li>
-                    <li><a class="nav-link" href="#skills">habilidades</a></li>
-                    <li><a class="nav-link" href="#projects">projetos</a></li>
-                    <li><a class="nav-link" href="#contact">contato</a></li>
-                    <li>
-                        <a class="nav-link" target="_blank" href="https://github.com/JeanCarlos899"><i
-                                class="fab fa-github"></i></a>
-                    </li>
-                    <li>
-                        <a class="nav-link" target="_blank"
-                            href="https://www.linkedin.com/in/jean-carlos-rodrigues-sousa-a4b503150/"><i
-                                class="fab fa-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a class="nav-link" target="_blank" href="https://www.instagram.com/jeann_carrlos/"><i
-                                class="fab fa-instagram"></i>
-                        </a>
-                    </li>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </label>
+                <ul class="menu">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#about">sobre</a></li>
+                    <li><a href="#skills">habilidades</a></li>
+                    <li><a href="#projects">projetos</a></li>
+                    <li><a href="#contact">contato</a></li>
                 </ul>
-        </div>
+        </nav>
     </header>
     <main>
         <section id="home" class="home-section">
@@ -61,12 +52,16 @@
             <div class="about-content container">
                 <h2>Sobre mim</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, facilis voluptate? Quidem
-                    temporibus voluptas labore dicta vel voluptates, veniam numquam sint recusandae maxime rem, minus
-                    repudiandae corrupti necessitatibus, ut aspernatur!
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet accusantium tempore autem,
-                    laborum, culpa unde eius fugit adipisci reprehenderit voluptate aut aperiam vitae. Deserunt id quod
-                    nostrum aperiam ratione earum!
+                    Me chamo Jean Carlos, sou um entusiasta da tecnologia, com formação técnica em informática para
+                    internet e atualmente
+                    graduando em Análise e Desenvolvimento de Sistemas pelo IFPI. Tenho preferência pelo backend, mas
+                    domino o front quando
+                    necessário. Minha experiência inclui contribuições em um projeto utilizando Flutter em uma startup.
+                    Além disso, sou um
+                    aficionado por computadores e adoro explorar novas tecnologias. Nos meus momentos de lazer,
+                    aproveito para pedalar e
+                    sentir a liberdade das trilhas de bicicleta. Com apenas 18 anos, estou determinado a seguir uma
+                    carreira na área da tecnologia, sempre em busca de desafios e oportunidades de aprendizado.
                 </p>
             </div>
         </section>
@@ -74,50 +69,50 @@
             <div class="container">
                 <h2>Habilidades</h2>
                 <div class="skills-content">
-                    <div class="skill">
-                        <img src="img/icons/html.svg" alt="">
-                        <p>HTML</p>
+                    <div class="row">
+                        <div class="skill">
+                            <img src="img/icons/html.svg" alt="">
+                            <p>HTML</p>
+                        </div>
+                        <div class="skill">
+                            <img src="img/icons/css.svg" alt="">
+                            <p>CSS</p>
+                        </div>
+                        <div class="skill">
+                            <img src="img/icons/bootstrap.svg" alt="">
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="skill">
+                            <img src="img/icons/javascript.svg" alt="">
+                            <p>Java Script</p>
+                        </div>
+                        <div class="skill">
+                            <img src="img/icons/java.svg" alt="">
+                            <p>Java</p>
+                        </div>
                     </div>
-                    <div class="skill">
-                        <img src="img/icons/css.svg" alt="">
-                        <p>CSS</p>
-                    </div>
-                    <div class="skill">
-                        <img src="img/icons/bootstrap.svg" alt="">
-                        <p>Bootstrap</p>
-                    </div>
-                    <div class="skill">
-                        <img src="img/icons/javascript.svg" alt="">
-                        <p>Java Script</p>
-                    </div>
-                    <div class="skill">
-                        <img src="img/icons/java.svg" alt="">
-                        <p>Java</p>
-                    </div>
-                    <div class="skill">
-                        <img src="img/icons/dart.svg" alt="">
-                        <p>Dart</p>
-                    </div>
-                    <div class="skill">
-                        <img src="img/icons/flutter.svg" alt="">
-                        <p>Flutter</p>
-                    </div>
-                    <div class="skill">
-                        <img src="img/icons/python.svg" alt="">
-                        <p>Python</p>
-                    </div>
-                    <div class="skill">
-                        <img src="img/icons/django.svg" alt="">
-                        <p>Django</p>
-                    </div>
+                    <div class="row">
+                        <div class="skill">
+                            <img src="img/icons/dart.svg" alt="">
+                            <p>Dart</p>
+                        </div>
+                        <div class="skill">
+                            <img src="img/icons/flutter.svg" alt="">
+                            <p>Flutter</p>
+                        </div>
+                        <div class="skill">
+                            <img src="img/icons/python.svg" alt="">
+                            <p>Python</p>
+                        </div>
+                        <div class="skill">
+                            <img src="img/icons/django.svg" alt="">
+                            <p>Django</p>
+                        </div>
 
-                    <div class="skill">
-                        <img src="img/icons/git.svg" alt="">
-                        <p>Git</p>
-                    </div>
-                    <div class="skill">
-                        <img src="img/icons/github.svg" alt="">
-                        <p>GitHub</p>
+                        <div class="skill">
+                            <img src="img/icons/git.svg" alt="">
+                            <p>Git</p>
+                        </div>
                     </div>
                 </div>
         </section>
@@ -125,36 +120,89 @@
             <div class="projects-content container">
                 <h2>Projetos</h2>
                 <div class="projects-container">
-                    <div class="project project-1">
-                        <h2>Gerenciador de tarefas</h2>
-                        <div class="tecnologies">
-                            <img src="img/icons/html.svg" alt="">
-                            <img src="img/icons/css.svg" alt="">
-                            <img src="img/icons/javascript.svg" alt="">
+                    <div class="project">
+                        <img class="project-img" src="img/projects/elaborador-de-provas.png" alt="">
+                        <div class="details">
+                            <p>Elaborador de Provas</p>
+                            <div class="tecnologies">
+                                <img src="img/icons/django.svg" alt="">
+                                <img src="img/icons/python.svg" alt="">
+                                <img src="img/icons/javascript.svg" alt="">
+                                <img src="img/icons/html.svg" alt="">
+                                <img src="img/icons/css.svg" alt="">
+                                <img src="img/icons/bootstrap.svg" alt="">
+                            </div>
                         </div>
                     </div>
                     <div class="project">
-                        <h2>Gerenciador de tarefas</h2>
-                        <div class="tecnologies">
-                            <img src="img/icons/html.svg" alt="">
-                            <img src="img/icons/css.svg" alt="">
-                            <img src="img/icons/javascript.svg" alt="">
+                        <img class="project-img" src="img/projects/gestor-de-financas.png" alt="">
+                        <div class="details">
+                            <p>Gerenciador de Finanças</p>
+                            <div class="tecnologies">
+                                <img src="img/icons/django.svg" alt="">
+                                <img src="img/icons/python.svg" alt="">
+                                <img src="img/icons/javascript.svg" alt="">
+                                <img src="img/icons/html.svg" alt="">
+                                <img src="img/icons/css.svg" alt="">
+                                <img src="img/icons/bootstrap.svg" alt="">
+                            </div>
                         </div>
                     </div>
                     <div class="project">
-                        <h2>Gerenciador de tarefas</h2>
-                        <div class="tecnologies">
-                            <img src="img/icons/html.svg" alt="">
-                            <img src="img/icons/css.svg" alt="">
-                            <img src="img/icons/javascript.svg" alt="">
+                        <img class="project-img" src="img/projects/retalhos-de-teatro.png" alt="">
+                        <div class="details">
+                            <p>Retalhos de Teatro</p>
+                            <div class="tecnologies">
+                                <img src="img/icons/javascript.svg" alt="">
+                                <img src="img/icons/html.svg" alt="">
+                                <img src="img/icons/css.svg" alt="">
+                                <img src="img/icons/bootstrap.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img class="project-img" src="img/projects/confeitaria-paulistana.png" alt="">
+                        <div class="details">
+                            <p>Confeitaria Paulistana</p>
+                            <div class="tecnologies">
+                                <img src="img/icons/python.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img class="project-img" src="img/projects/sistema-academico.png" alt="">
+                        <div class="details">
+                            <p>Sistema Acadêmico</p>
+                            <div class="tecnologies">
+                                <img src="img/icons/java.svg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
         </section>
         <section id="contact" class="contact">
-            <div class="container">
-                <h2>Contato</h2>
+            <div class="contact-content container">
+                <h2>Contatos</h2>
+                <div class="contacts">
+                    <a href=""></a>
+                    <a href="mailto:jeancarllos99@outlook.com" target="_blank" class="contact-info">
+                        <i class="far fa-envelope"></i>
+                        <h3>E-mail</h3>
+                        <p>jeancarllos99@outlook.com</p>
+                    </a>
+                    <a href="https://github.com/JeanCarlos899" target="_blank" class="contact-info">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>@JeanCarlos899</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jeancarrllos/" target="_blank" class="contact-info">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>Linkedin</h3>
+                        <p>@jeancarrllos</p>
+                    </a>
+                </div>
             </div>
+        </section>
     </main>
     <footer>
 
