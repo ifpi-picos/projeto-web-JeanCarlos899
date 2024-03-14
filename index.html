@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <meta name="description" content="Portfólio de Jean Carlos">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/afaa046a39.js" crossorigin="anonymous" async></script>
     <script src="js/main.js" async></script>
     <title>Document</title>
@@ -14,7 +15,7 @@
     <header class="header">
         <nav class="container">
             <div class="logo">
-                <a href="index.html">
+                <a href="index.html" aria-label="Recarregar página">
                     <i class="fas fa-coffee"></i>
                 </a>
             </div>
@@ -22,13 +23,13 @@
             <label for="menu-toggle" class="menu-icon">
                 <i class="fas fa-bars"></i>
             </label>
-                <ul class="menu">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#about">sobre</a></li>
-                    <li><a href="#skills">habilidades</a></li>
-                    <li><a href="#projects">projetos</a></li>
-                    <li><a href="#contact">contato</a></li>
-                </ul>
+            <ul class="menu">
+                <li><a href="#">home</a></li>
+                <li><a href="#about">sobre</a></li>
+                <li><a href="#skills">habilidades</a></li>
+                <li><a href="#projects">projetos</a></li>
+                <li><a href="#contact">contato</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -36,16 +37,18 @@
             <div class="home-container container">
                 <div class="home-content">
                     <div class="title">
-                        <h2></h2>
-                        <span></span>
-                        <p></p>
+                        <h2>Olá, eu sou o</h2>
+                        <span>Jean Carlos :)</span>
+                        <p>Desenvolvedor Full Stack Jr.</p>
                     </div>
                     <div class="home-buttons">
                         <button class="btn-outlined">Baixar CV</button>
                         <button class="btn">Entre em contato</button>
                     </div>
                 </div>
-                <img class="perfil" src="img/perfil.png" alt="">
+                <div class="profile-picture">
+                    <img class="picture" src="img/perfil.webp" alt="">
+                </div>
             </div>
         </section>
         <section id="about" class="about">
@@ -66,7 +69,7 @@
             </div>
         </section>
         <section id="skills" class="skills">
-            <div class="container">
+            <div class="skills-container container">
                 <h2>Habilidades</h2>
                 <div class="skills-content">
                     <div class="row">
@@ -121,7 +124,7 @@
                 <h2>Projetos</h2>
                 <div class="projects-container">
                     <div class="project">
-                        <img class="project-img" src="img/projects/elaborador-de-provas.png" alt="">
+                        <img class="project-img" src="img/projects/elaborador-de-provas.webp" alt="">
                         <div class="details">
                             <p>Elaborador de Provas</p>
                             <div class="tecnologies">
@@ -135,7 +138,7 @@
                         </div>
                     </div>
                     <div class="project">
-                        <img class="project-img" src="img/projects/gestor-de-financas.png" alt="">
+                        <img class="project-img" src="img/projects/gestor-de-financas.webp" alt="">
                         <div class="details">
                             <p>Gerenciador de Finanças</p>
                             <div class="tecnologies">
@@ -149,7 +152,7 @@
                         </div>
                     </div>
                     <div class="project">
-                        <img class="project-img" src="img/projects/retalhos-de-teatro.png" alt="">
+                        <img class="project-img" src="img/projects/retalhos-de-teatro.webp" alt="">
                         <div class="details">
                             <p>Retalhos de Teatro</p>
                             <div class="tecnologies">
@@ -161,7 +164,7 @@
                         </div>
                     </div>
                     <div class="project">
-                        <img class="project-img" src="img/projects/confeitaria-paulistana.png" alt="">
+                        <img class="project-img" src="img/projects/confeitaria-paulistana.webp" alt="">
                         <div class="details">
                             <p>Confeitaria Paulistana</p>
                             <div class="tecnologies">
@@ -170,7 +173,7 @@
                         </div>
                     </div>
                     <div class="project">
-                        <img class="project-img" src="img/projects/sistema-academico.png" alt="">
+                        <img class="project-img" src="img/projects/sistema-academico.webp" alt="">
                         <div class="details">
                             <p>Sistema Acadêmico</p>
                             <div class="tecnologies">
@@ -184,16 +187,15 @@
             <div class="contact-content container">
                 <h2>Contatos</h2>
                 <div class="contacts">
-                    <a href=""></a>
-                    <a href="mailto:jeancarllos99@outlook.com" target="_blank" class="contact-info">
-                        <i class="far fa-envelope"></i>
-                        <h3>E-mail</h3>
-                        <p>jeancarllos99@outlook.com</p>
-                    </a>
                     <a href="https://github.com/JeanCarlos899" target="_blank" class="contact-info">
                         <i class="fab fa-github"></i>
                         <h3>GitHub</h3>
                         <p>@JeanCarlos899</p>
+                    </a>
+                    <a href="mailto:jeancarllos99@outlook.com" target="_blank" class="contact-info">
+                        <i class="far fa-envelope"></i>
+                        <h3>E-mail</h3>
+                        <p>jeancarllos99@outlook.com</p>
                     </a>
                     <a href="https://www.linkedin.com/in/jeancarrllos/" target="_blank" class="contact-info">
                         <i class="fab fa-linkedin"></i>

@@ -2,6 +2,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+body::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(6, 6, 6);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(41, 41, 41);
+    border-radius: 20px;
+    border: 3px solid rgb(41, 41, 41);
+}
+
 :root {
     --primary-color: #fff;
     --secondary-color: #8257E6;
@@ -15,6 +29,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto';
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -95,7 +111,7 @@ nav {
 
 .home-section {
     display: flex;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url('../img/background.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url('../img/background.webp');
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -182,6 +198,18 @@ nav {
     transition: 0.5s;
 }
 
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.picture {
+    max-height: 100%;
+    max-width: 100%;
+}
+
 /* sobre */
 
 .about {
@@ -219,6 +247,9 @@ nav {
     padding: 4rem 0 4rem 0;
 }
 
+.skills-container {
+    flex-direction: column;
+}
 
 .skills-content {
     display: flex;
@@ -337,6 +368,10 @@ nav {
     gap: 0.6rem;
 }
 
+.project:hover .details {
+    display: none;
+}
+
 .details p {
     font-size: 1.2rem;
     font-weight: bold;
@@ -405,31 +440,44 @@ nav {
 /* Celular */
 
 @media (max-width: 576px) {
-    .perfil {
+
+    /* seção inicial */
+    .profile-picture {
         display: none;
     }
+
+    .home-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* sobre */
+    .about-content {
+        width: 80%;
+    }
+
+    /* projetos */
+    .project {
+        width: 100%;
+        min-width: none;
+    }
+
+    /* contatos */
+    .contacts {
+        width: 100%;
+    }
+
 }
 
+@media (max-width: 768px) {
 
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    text-decoration: none;
-    list-style: none;
-}
-
-
-
-@media only screen and (max-width: 950px) {
+    /* header */
     .menu {
         flex-direction: column;
         background-color: #151418;
-        align-items: start;
+        align-items: center;
         position: absolute;
-        top: 64px;
+        top: 63px;
         left: 0;
         width: 100%;
         z-index: 1;
@@ -437,6 +485,7 @@ nav {
         transform-origin: top;
         transition: transform 0.3s ease-in-out;
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        padding: 1rem;
     }
 
     .menu a {
@@ -452,5 +501,24 @@ nav {
         color: #fff;
         font-size: 28px;
         cursor: pointer;
+    }
+
+    /* projetos */
+    .project {
+        width: 100%;
+    }
+
+    /* contatos */
+    .contacts {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    /* sobre */
+    .about-content {
+        width: 80%;
     }
 }
