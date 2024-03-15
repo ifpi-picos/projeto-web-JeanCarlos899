@@ -307,7 +307,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(47, 5, 73, 1) 23%, rgba(130, 87, 230, 1) 100%);
+    background-color: var(--tertiary-color);
     padding: 4rem 0 4rem 0;
     color: var(--primary-color);
 }
@@ -522,3 +522,4 @@ nav {
         width: 80%;
     }
 }
+
